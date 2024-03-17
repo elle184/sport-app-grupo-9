@@ -33,7 +33,7 @@ class Evento(db.Model):
     nombre = db.Column(db.String(128), nullable=False)
     deporte = db.Column(db.String(128), nullable=False)
     lugar = db.Column(db.String(128), nullable=True)
-    fecha = db.Column(db.DateTime, nullable=False)
+    fecha = db.Column(db.String(30), nullable=True)
     creado_por = db.Column(db.Integer, db.ForeignKey('usuario.id'))
 
 
